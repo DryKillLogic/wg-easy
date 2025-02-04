@@ -9,7 +9,7 @@ services:
       # ⚠️ Required:
       # Change this to your host's public address
       - SERVICE_FQDN_WGEASY_51821
-      - WG_HOST=${SERVICE_FQDN_WGEASY}
+      - 'WG_HOST=${SERVICE_FQDN_WGEASY}'
       - PORT=51821
       - WG_PORT=51820
       #- WG_HOST=raspberrypi.local
