@@ -6,10 +6,14 @@ services:
     environment:
       # Change Language:
       # (Supports: en, ua, ru, tr, no, pl, fr, de, ca, es, ko, vi, nl, is, pt, chs, cht, it, th, hi)
-      - LANG=de
       # ⚠️ Required:
       # Change this to your host's public address
-      - WG_HOST=raspberrypi.local
+      - SERVICE_FQDN_WIREGUARDEASY_51821
+      - 'WG_HOST=${SERVICE_FQDN_WIREGUARDEASY}'
+      - 'LANG=${LANG:-en}'
+      - PORT=51821
+      - WG_PORT=51820
+      #- WG_HOST=raspberrypi.local
       #SERVICE_FQDN_ADMIN_51821
       - SERVICE_FQDN_WIREGUARDEASY=https://vpn.stremaddon.net 
       # Optional:
